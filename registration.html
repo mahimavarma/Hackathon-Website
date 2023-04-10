@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body id="body">
+    <p>REGISTRATION ENDS IN</p>
+    <p id="demo"></p>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("30 april, 2023 15:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {54
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
+<form action="action_page.php">
+  <div class="registration" align="center">
+    <h1>Register</h1>
+    <p>Please fill in this form to register for the hackathon.</p>
+    <div class="form">
+      <div>
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+
+      <!-- <label for="psw"><b>Password</b></label> -->
+      <div>
+        <input
+          type="text"
+          placeholder="Enter Team Name"
+          name="psw"
+          id="psw"
+          required
+        />
+      </div>
+
+      <!-- <label for="psw-repeat"><b>Repeat Password</b></label> -->
+
+      <div>
+        <input
+          type="text"
+          placeholder=" Enter Team Leader Name"
+          name="psw-repeat"
+          id="psw-repeat"
+          required
+        />
+      </div>
+
+      <div>
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input
+          type="text"
+          placeholder="Enter Team Leader's Mobile Number"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+
+      <div>
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input
+          type="text"
+          placeholder="Enter Team Member 1's name"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+
+      <div>
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input
+          type="text"
+          placeholder="Enter Team Member 2's name"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+      <div>
+        <!-- <label for="email"><b>Email</b></label> -->
+        <input
+          type="text"
+          placeholder="Enter Domain Preference"
+          name="email"
+          id="email"
+        
+class="btn-group"
+  
+
+        
+    
+          required
+        />
+      </div>
+      <!-- <div class="custom-select" style="width: 200px">
+        <label for="cars">Choose a car:</label>
+        <select>
+          <option value="Social Cause ">Social Cause</option>
+          <option value="Web Development">Saab</option>
+          <option value="Cyber Security">Opel</option>
+          <option value="App Development">Audi</option>
+        </select>
+      </div> -->
+    </div>
+
+    <div>
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+      <label for="vehicle1"
+        >By creating an account you agree to our
+        <a href="#">Terms & Privacy</a>.</label
+      ><br />
+    </div>
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="signin">
+    <p style="font-size: large">
+      Already registered? <a href="#">Edit Response</a>.
+    </p>
+  </div>
+</form>
+<style>
+  body {
+    background: url(background\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  p {
+    text-align: center;
+    font-size: 30px;
+
+    margin-top: 0px;
+  }
+</style>
+
+  
